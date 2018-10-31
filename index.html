@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free coming soon template with jQuery countdown">
+
+  <title>Ramada Yelahanka </title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+  <!-- siimple style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+form{
+width: 100%;
+    margin: auto;
+    max-width: 100%;
+}
+input[type="text"] {
+    width: 100%;
+    margin: 0 0 10px;
+    background: #fff;
+    border: none;
+    color: #000;
+    padding: 6px 15px;
+    border-bottom: 1px dotted #b3b2b2;
+}
+input[type="email"] {
+    width: 100%;
+    margin: 0 0 10px;
+    background: #fff;
+    border: none;
+    color: #000;
+    padding: 6px 15px;
+	   border-bottom: 1px dotted #b3b2b2;
+}
+textarea {
+    height:60px;
+	resize:none;
+	width: 100%;
+    margin: 0 0 10px;
+    background: #fff;
+    border: none;
+    color: #000;
+    padding: 6px 15px;
+	   border-bottom: 1px dotted #b3b2b2;
+}
+p{      color: #fff;
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 24px;}
+input[type="submit"] {
+    background: #394864;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#wrapper h1 {
+margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+    div#enq {
+    background: #394864;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
+    margin: 0 auto;
+        cursor: pointer;
+}
+    .col-md-12.center {
+    text-align: center;
+}
+
+.phone{    color: #fff;
+    margin-top: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;}
+</style>
+</head>
+<body>
+
+   <div id="wrapper" style="background:url(assets/img/img1.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+		<p><img src="assets/img/ramada-yelahanka-logo.png" style="padding: 10px; width: 210px;"></p>
+          <h1>Coming Soon</h1>
+		  <p>A luxury escape away from the city’s humdrum, this urban resort is nestled in the pristine environs of North Bengaluru. Spread over 5.5 acres, Ramada Yelahanka Bengaluru is strategically situated along the Doddaballapur-Yelahanka Highway near the Kempegowda International Airport. Celebrating nature, our resort offers a refreshing sight of vineyards, manicured gardens and groves. With 65 elegantly designed guest rooms and banqueting facilities for MICE events, it is a sought after destination in the city. We also have quite a few options for guests to unwind - a fitness center, a wellness spa and a swimming pool.
+		  </p>
+         <div class="col-md-12 center">
+          <div class="" id="enq" data-toggle="modal" data-target="#myModal">Notify me </div>   
+		    
+         </div>
+         
+		  
+		<div class="clearfix"></div>
+		 <div class="phone"><a href="#" style="color:#fff;"> <i class="fa fa-phone"></i> +91 91485 75490</a> </div>
+		 
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title"> Notify me </h4> 
+        </div>
+        <div class="modal-body">
+         <form method="post" action="#" id="frmm" >
+		 <input type="text" placeholder="Name" required />
+		 <input type="email" placeholder="Email" required />
+		 <input type="text" placeholder="Phone" required />
+		 <textarea placeholder="Message"> Message</textarea>
+		 <input type="submit" value="Submit"  />
+		 </form>
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+  
+ 
+
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript">
+    $('#countdown').countdown('2018/11/15', function(event) {
+      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+    });
+  </script>
+
+  <script src="contactform/contactform.js"></script>
+   <!-- <script>
+        $( document ).ready(function() {
+    
+});
+    $('#enq').click(function () {
+        $("#enq").hide();
+       $("#frmm").show();
+    });
+    </script>-->
+	
+	
+	
+
+</body>
+
+</html>
